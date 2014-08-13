@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>michael j lo</title>
+        <meta name="description" content="Personal website for Michael Lo (c) 2013">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/stylize.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Add your site or application content here -->
+        <div id='separator'></div>
+        <div id='brand'></div>
+
+        <div id='navigation'>
+            <!-- Better if in an HTML list for SEO purposes -->
+            <a id="aboutLink" href='#'>about</a></br></br>
+            <a id="projectsLink" href='#'>projects</a></br></br>
+            <a id="resumeLink" href='#'>resume</a></br></br>
+            <a id="contactLink" href='#'>contact</a></br></br>
+        </div>
+
+        <div id='content'>
+            <div id='about'>
+            <p><b>Hi. I'm Michael.</b> I'm a technology business analyst by day and student, technologist, and entrepreneur by night. Previously, I worked at a financial institution developing software requirements for clients, developers, and testers. I've since returned to school to complete a Masters of Science in Computer Science.
+            <br />
+            <br />
+            <b>I enjoy learning</b> new programming (and spoken) languages, working on ideas my friends and I have, and getting lost on Wikipedia. 
+            <br />
+            <br />
+            <b>My history brief</b> includes spending many hours <a href='http://www.sphereserver.net' target='_blank'>developing</a> ways to <a href='http://en.wikipedia.org/wiki/Ultima_Online#History' target='_blank'>level up</a>, exploring the <a href='http://en.wikipedia.org/wiki/Hong_Kong' target='_blank'>far east</a> after 16-hour flights, and working in student groups and ResLife at University.</p>
+            </div>
+
+            </br>
+            </br>
+
+            <div id="projects">
+            <h3>Projects</h3>
+            <p>
+                <ul>
+                    <li>
+                        <div id="projectFlickr">
+                            <a href='https://www.flickr.com/photos/lojt/' target='_blank'>&nbsp;LoJT@Flickr</a>
+                        </div>
+                    </li>
+                </ul>
+            </p>
+            </div>
+    
+            </br></br></br></br></br>
+            </br></br></br></br></br>
+
+            <div id="resume">
+            <h3>Resume</h3>
+            <p>
+                <ul id="resumeList">
+                    <li><b>Currently:</b> MS Candidate in Computer Science at Columbia University</li>
+                    <li>BS in Operations Research Engineering and Computer Science from Columbia University</li>
+                    <li>Software Engineering and Program Manager Internships in Hong Kong and Seattle</li>
+                    <li>Technology Business Analyst at a financial institution</li>
+                    <br />
+                    Find out more: <a href='http://www.linkedin.com/in/michaeljlo/'>LinkedIn</a>
+                </ul>
+            </p>
+            </div>
+
+            </br>
+            </br>
+
+            <div id="contact">
+            <h3>Contact</h3>
+            <p><b>email:</b> lastname dot firstname at gmail dot com</p>
+        </div>
+        </div>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- JQuery Custom Code -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#brand').fadeIn(2000);
+                $('#navigation').fadeIn(2000);
+
+                // Slow scroll to section
+                $("#aboutLink").on('click',function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $("div[id='about']").offset().top},'slow');
+                });
+                $("#projectsLink").on('click',function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $("div[id='projects']").offset().top},'slow');
+                });
+                $("#resumeLink").on('click',function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $("div[id='resume']").offset().top},'slow');
+                });
+                $("#contactLink").on('click',function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $("div[id='contact']").offset().top},'slow');
+                });
+            });
+          </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-39516027-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
