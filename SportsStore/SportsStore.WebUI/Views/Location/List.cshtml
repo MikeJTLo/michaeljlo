@@ -1,0 +1,19 @@
+﻿@model SportsStore.WebUI.Models.LocationsListViewModel
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<div class="menu">
+@Html.PageLinks(Model.PagingInfo, (i)=>Url.Action("List", new{page = i}))
+</div>
+
+@foreach (var location in Model.Locations)
+{
+    <div class="item">
+        <h3>@location.LocID</h3>
+        <h4>@location.Name</h4>
+    </div>
+}
